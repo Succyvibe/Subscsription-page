@@ -4,74 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="css/main.css" />
     <title>Billing Address form</title>
   </head>
   <body class="bg-gray-200">
-    <nav class="">
-      <div class="container mx-auto flex justify-between pt-6 px-4">
-        <div>Logo</div>
-        <ul class="flex space-x-4">
-          <li>
-            <a href="#" class="text-xs font-semibold flex items-center">
-              <div
-                class="w-[25px] h-[25px] bg-pink-200 flex justify-center items-center rounded-[100%] mr-2"
+    <!-- -===========nav========== -->
+    <nav>
+      <div class="nav-center">
+        <!-- nav-header -->
+
+        <div class="nav-header">
+          <div class="logo">Succyvibe</div>
+          <!-- <img src="/logo.jpg" alt="logo" class="logo" /> -->
+          <button class="nav-toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <!-- ========links===== -->
+        <div class="links-container">
+          <ul class="links lg:space-y-0 lg:flex lg:space-x-4">
+            <li class="mb-4 lg:mb-0">
+              <a href="#" class="text-xs font-semibold flex items-center">
+                <div
+                  class="w-[25px] h-[25px] bg-pink-200 flex justify-center items-center rounded-[100%] mr-2"
+                >
+                  1
+                </div>
+                Select Plan
+              </a>
+            </li>
+            <li class="mb-4 lg:mb-0">
+              <a
+                href="billing.html"
+                class="text-xs font-semibold flex items-center"
               >
-                1
-              </div>
-              Select Plan
+                <div
+                  class="w-[25px] h-[25px] bg-pink-200 flex justify-center items-center rounded-[100%] mr-2"
+                >
+                  2
+                </div>
+                Billing Address</a
+              >
+            </li>
+            <li class="mb-4 lg:mb-0">
+              <a
+                href="domain.html"
+                class="text-xs font-semibold flex items-center"
+              >
+                <div
+                  class="w-[25px] h-[25px] bg-gray-300 flex justify-center items-center rounded-[100%] mr-2"
+                >
+                  3
+                </div>
+                Choose Domain</a
+              >
+            </li>
+
+            <li class="mb-4 lg:mb-0">
+              <a
+                href="payment.html"
+                class="text-xs font-semibold flex items-center"
+              >
+                <div
+                  class="w-[25px] h-[25px] bg-gray-300 flex justify-center items-center rounded-[100%] mr-2"
+                >
+                  4
+                </div>
+                Payment Details</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ======end==links===== -->
+
+        <!-- ========social media============== -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.t">
+              <i class="fab fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a
-              href="billing.html"
-              class="text-xs font-semibold flex items-center"
-            >
-              <div
-                class="w-[25px] h-[25px] bg-pink-200 flex justify-center items-center rounded-[100%] mr-2"
-              >
-                2
-              </div>
-              Billing Address</a
-            >
+            <a href="https://twitter.com/SuccessIbekwe1">
+              <i class="fab fa-twitter"></i>
+            </a>
           </li>
           <li>
-            <a
-              href="domain.html"
-              class="text-xs font-semibold flex items-center"
-            >
-              <div
-                class="w-[25px] h-[25px] bg-gray-300 flex justify-center items-center rounded-[100%] mr-2"
-              >
-                3
-              </div>
-              Choose Domain</a
-            >
+            <a href="https://www.twitter.com">
+              <i class="fab fa-behance"></i>
+            </a>
           </li>
-
           <li>
-            <a
-              href="payment.html"
-              class="text-xs font-semibold flex items-center"
-            >
-              <div
-                class="w-[25px] h-[25px] bg-gray-300 flex justify-center items-center rounded-[100%] mr-2"
-              >
-                4
-              </div>
-              Payment Details</a
-            >
+            <a href="https://www.linkedin.com/in/success-ibekwe-94bb43226/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-sketch"></i>
+            </a>
           </li>
         </ul>
-
-        <button>close-button</button>
+        <!-- ======End==social media============== -->
+        <!--end nav-header -->
       </div>
     </nav>
+    <!-- -===========nav========== -->
     <header id="main" class="pt-10 mb-10">
       <!-- hero section -->
-      <div class="w-2/5 mx-auto text-center">
-        <h1 class="text-2xl font-bold">Billing Address</h1>
-        <p class="text-sm">
+      <div class="w-3/4 lg:w-2/5 mx-auto text-center">
+        <h1 class="text-3xl md:text-4xl font-bold">Billing Address</h1>
+        <p class="text-sm md:text-lg lg:xl">
           Please enter your billing address below. We collect this information
           to help combat fraud, and keep your payment secure.
         </p>
@@ -82,52 +132,52 @@
     <!-- Form section -->
 
     <section>
-      <div class="container w-2/5 mx-auto bg-white p-8 rounded">
+      <div class="container w-3/4 lg:w-2/5 mx-auto bg-white p-8 rounded">
         <form action="">
           <!-- select country -->
-          <label for="" class="text-xs">COUNTRY</label>
+          <label for="" class="text-md md:lg">COUNTRY</label>
           <select
             name=""
             id=""
-            class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+            class="mb-4 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 text-md md:lg"
           >
             Nigeria
           </select>
 
-          <div class="flex justify-between space-x-4">
+          <div class="md:flex md:justify-between md:space-x-4">
             <div class="w-full">
-              <label for="" class="text-xs">STREET ADDRESS</label>
+              <label for="" class="text-md md:lg">STREET ADDRESS</label>
               <input
                 type="text"
-                class="mb-4 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+                class="mb-4 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 text-md md:lg"
                 placeholder="Address"
               />
 
-              <label for="" class="text-xs">STATE/REGION</label>
+              <label for="" class="text-md md:lg">STATE/REGION</label>
               <input
                 type="text"
                 placeholder="State of residence"
-                class="mb-4 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+                class="mb-4 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 text-md md:lg"
               />
             </div>
             <div class="w-full">
-              <label for="" class="text-xs">CITY</label>
+              <label for="" class="text-md md:lg">CITY</label>
               <input
                 type="text"
                 placeholder="LGA"
-                class="mb-4 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+                class="mb-4 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 text-md md:lg"
               />
-              <label for="" class="text-xs">ZIP/POST CODE</label>
+              <label for="" class="text-md md:lg">ZIP/POST CODE</label>
               <input
                 type="text"
                 placeholder="ZIP code"
-                class="mb-4 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+                class="mb-4 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 text-md md:lg"
               />
             </div>
           </div>
         </form>
         <button
-          class="bg-pink-600 text-white px-4 py-2 font-bold text-sm mt-4 rounded"
+          class="w-full md: bg-pink-600 text-white px-4 py-2 font-bold text-lg md:xl mt-4 rounded hover:bg-pink-500 hover:transition"
         >
           Save Address
         </button>
