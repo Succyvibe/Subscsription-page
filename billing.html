@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Billing Address form</title>
+  </head>
+  <body class="bg-gray-200">
+    <nav class="">
+      <div class="container mx-auto flex justify-between pt-6 px-4">
+        <div>Logo</div>
+        <ul class="flex space-x-4">
+          <li>
+            <a href="#" class="text-xs font-semibold flex items-center">
+              <div
+                class="w-[25px] h-[25px] bg-pink-200 flex justify-center items-center rounded-[100%] mr-2"
+              >
+                1
+              </div>
+              Select Plan
+            </a>
+          </li>
+          <li>
+            <a
+              href="billing.html"
+              class="text-xs font-semibold flex items-center"
+            >
+              <div
+                class="w-[25px] h-[25px] bg-pink-200 flex justify-center items-center rounded-[100%] mr-2"
+              >
+                2
+              </div>
+              Billing Address</a
+            >
+          </li>
+          <li>
+            <a
+              href="domain.html"
+              class="text-xs font-semibold flex items-center"
+            >
+              <div
+                class="w-[25px] h-[25px] bg-gray-300 flex justify-center items-center rounded-[100%] mr-2"
+              >
+                3
+              </div>
+              Choose Domain</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="payment.html"
+              class="text-xs font-semibold flex items-center"
+            >
+              <div
+                class="w-[25px] h-[25px] bg-gray-300 flex justify-center items-center rounded-[100%] mr-2"
+              >
+                4
+              </div>
+              Payment Details</a
+            >
+          </li>
+        </ul>
+
+        <button>close-button</button>
+      </div>
+    </nav>
+    <header id="main" class="pt-10 mb-10">
+      <!-- hero section -->
+      <div class="w-2/5 mx-auto text-center">
+        <h1 class="text-2xl font-bold">Billing Address</h1>
+        <p class="text-sm">
+          Please enter your billing address below. We collect this information
+          to help combat fraud, and keep your payment secure.
+        </p>
+      </div>
+      <!-- hero section -->
+    </header>
+
+    <!-- Form section -->
+
+    <section>
+      <div class="container w-2/5 mx-auto bg-white p-8 rounded">
+        <form action="">
+          <!-- select country -->
+          <label for="" class="text-xs">COUNTRY</label>
+          <select
+            name=""
+            id=""
+            class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+          >
+            Nigeria
+          </select>
+
+          <div class="flex justify-between space-x-4">
+            <div class="w-full">
+              <label for="" class="text-xs">STREET ADDRESS</label>
+              <input
+                type="text"
+                class="mb-4 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+                placeholder="Address"
+              />
+
+              <label for="" class="text-xs">STATE/REGION</label>
+              <input
+                type="text"
+                placeholder="State of residence"
+                class="mb-4 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+              />
+            </div>
+            <div class="w-full">
+              <label for="" class="text-xs">CITY</label>
+              <input
+                type="text"
+                placeholder="LGA"
+                class="mb-4 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+              />
+              <label for="" class="text-xs">ZIP/POST CODE</label>
+              <input
+                type="text"
+                placeholder="ZIP code"
+                class="mb-4 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+              />
+            </div>
+          </div>
+        </form>
+        <button
+          class="bg-pink-600 text-white px-4 py-2 font-bold text-sm mt-4 rounded"
+        >
+          Save Address
+        </button>
+      </div>
+    </section>
+
+    <!-- Form section -->
+
+    <script src="index.js"></script>
+  </body>
+</html>
